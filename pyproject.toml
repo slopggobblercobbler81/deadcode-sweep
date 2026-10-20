@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deadcode-sweep"
+version = "0.1.0"
+description = "A fast static analyzer for Python and JavaScript codebases to detect unused functions, unreachable code, and orphaned imports."
+readme = "README.md"
+authors = [
+    { name = "slopggobblercobbler81" }
+]
+license = { text = "MIT" }
+keywords = ["static-analysis", "deadcode", "linter", "ast", "python", "javascript", "clean-code"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Compilers",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/slopggobblercobbler81/deadcode-sweep"
+Repository = "https://github.com/slopggobblercobbler81/deadcode-sweep"
+Issues = "https://github.com/slopggobblercobbler81/deadcode-sweep/issues"
+
+[project.scripts]
+deadcode-sweep = "deadcode_sweep.cli:main"
